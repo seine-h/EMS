@@ -1,0 +1,31 @@
+/*
+ * File       : ui.css
+ * Author     : hyewon park
+ *
+ * SUMMARY:
+ * 1) LOGIN PAGE
+ */
+@import "base.css";
+
+
+/*
+  1) LOGIN PAGE
+*/
+
+.ems-fullpanel {width:100vw; height:100vh; background: #212529;}
+.ems-fullpanel .ems-login-wrap {padding-top: 30vh;}
+.ems-fullpanel .ems-login-wrap h1 {font-size:32px; color: #fff; text-align: center; }
+.ems-fullpanel .ems-login-wrap .ems-login-form {max-width:778px; width:100%; margin: 0 auto; text-align: center;}
+
+.ems-fullpanel .ems-login-wrap .ems-login-form .ems-input-g12 label {font-size: 1rem; color: #fff; height: 24px; line-height: 24px; display: block; text-align: left; margin: 10px 0; }
+.ems-fullpanel .ems-login-wrap .ems-login-form .ems-input-g12 input {width: 100%; padding: 8px; height:24px; line-height: 24px; font-size: 1rem; border:1px solid #707070;transition: all 0.3s; background-color: #212529; border-radius: 4px; }
+
+.ems-fullpanel .ems-login-wrap .ems-login-form .ems-input-g12 input:focus {border-color:#fff;}
+.ems-fullpanel .ems-login-wrap .ems-login-form button {width: 184px; height:50px; background: #fff; font-size:1rem; padding:0px;}
+
+
+.ems-fullpanel .ems-login-wrap .ems-input-ckeckbox {text-align: left; margin-top: 10px}
+.ems-fullpanel .ems-login-wrap .ems-input-ckeckbox input { }
+.ems-fullpanel .ems-login-wrap .ems-input-ckeckbox label { display: inline-block; font-size: 1rem; color: #fff; }
+
+.ems-fullpanel .ems-login-wrap .ems-login-form .ems-button label {display: none;}

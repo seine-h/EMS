@@ -1,0 +1,150 @@
+/*
+ * File       : base.css
+ * Author     : hyewon park
+ *
+ * SUMMARY:
+ * 1) RESET FILES
+ */
+
+
+@import url(http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap');
+
+/* global rest */
+html, body {
+    height: 100%;
+}
+html, body, pre,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd, ul, li, ol,
+th, td, p, blockquote,
+form, fieldset, legend, label,
+menu, nav, section, hgroup, article, header, aside, footer,
+input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+body,
+h1, h2, h3, h4, h5, h6,
+input, select, textarea, a {
+    font-size: 16px; letter-spacing:-0.5px;
+    color: #111;
+    font-family:'Noto Sans KR', 'Noto Sans', sans-serif;
+}
+table {font-size: 13.5px;
+    color: #111;letter-spacing:-0.5px;
+    }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;letter-spacing:-0.5px;
+}
+img, fieldset,button {
+    border:0 none;
+}
+img {
+    vertical-align: top;
+}
+li {
+    list-style: none;
+}
+hr, caption, legend {
+    display: none;
+}
+a {
+    color: #111;
+    text-decoration: none;
+}
+a:hover {
+}
+button {
+    overflow: hidden;
+    cursor: pointer;
+}
+button span {
+    visibility: hidden;
+}
+address, em {
+    font-style: normal;
+}
+button, input, select, textarea, a {
+    vertical-align: middle;
+}
+select {
+    line-height: 18px;
+    height: 18px;
+    border: solid #aaa 1px;
+}
+input:focus {
+    outline: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+
+
+/* image replace, hidden text */
+.ir *,
+.blind { z-index:-1; position: absolute; display: block; left: 0; top: 0; overflow: hidden; visibility: hidden; width: 0; height: 0; text-indent: -9999px; }
+/* block, inline */
+.d-block { display: block;}
+.d-inline { display: inline;}
+/* form */
+.tal { text-align: left; }
+.tac { text-align: center; }
+.tar { text-align: right; }
+/* font-color */
+.fc-red { color: #bd101b; }
+.fc-blue { color: #2c6b9e; }
+.MS_option_price { color: #FF3C00; }
+/* bold */
+.bold { font-weight: bold; }
+/* float clear */
+.clear {zoom: 1;}
+.clear:after {content: ""; display: block; clear: both;}
+
+
+
+/*
+Component
+*/
+.ui-checkboxradio {width: 1px !important; height: 1px !important; opacity: 0; }
+.ui-checkboxradio-label {position: relative; font-size:1rem; padding-left: 2rem;}
+.ui-checkboxradio-label::before {content: ""; width: 1.4rem; height: 1.4rem; border:1px solid #ddd; border-radius: 2px; display: block; position: absolute; left: -1px;}
+.ui-checkboxradio-label.ui-checkboxradio-checked::after {content:'\e928'; font-family:xeicon!important; position: absolute; left: 0.2rem ; top:0.25rem; font-size: 1rem}
+
+
+/*
+LAYOUT
+*/
+.ems-fullpanel {width:100vw; height:100vh; background: #1E2227;}
+.ems-header-wrap {height:3.75rem; border-bottom:1px solid rgba(255,255,255,0.1); overflow: hidden}
+.ems-header-wrap .ems-header::after {content: ''; float: none; display: block; clear: both;}
+.ems-header-wrap .ems-header .ems-logo {float: left;}
+.ems-header-wrap .ems-header .ems-logo h1 img {height:2.2rem; position: relative; margin: 0.75rem 0 0 1.375rem; margin-right: 0.9rem; float: left;}
+.ems-header-wrap .ems-header .ems-logo h1::after {content: ''; float: none; display: block; clear: both;}
+.ems-header-wrap .ems-header .ems-logo h1 {font-size: 1.625rem; height: 2.2rem; line-height: 3.5rem; color:#fff; font-weight: bold; float: left; }
+.ems-header-wrap .ems-header .ems-logo span { font-weight: 300; font-size: 1.125rem; display:inline-block; color:rgba(255,255,255,0.6); line-height: 3.6rem; float: left; margin-left: 0.5rem}
+
+.ems-header-wrap .ems-header .
+
+
+.ems-midpanel::after {content: ''; float: none; display: block; clear: both;}
+.ems-midpanel > div {height: calc(100vh - 3.75rem);}
+.ems-midpanel .ems-gnb-wrap {float: left; width: 12.5rem;background: #2B3038; padding-top: 1rem}
+.ems-midpanel .ems-gnb-wrap .ems-gnb ul li {height:4rem; line-height: 4rem; }
+.ems-midpanel .ems-gnb-wrap .ems-gnb ul li a {display: block; color:#fff; font-size: 1.15rem; padding-left: 1.5rem;}
+
+
+.ems-midpanel .ems-content-wrap {float: left; width:calc(100vw - 12.5rem);}
+
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li {display: inline-block; border-radius:1.5rem; margin-right: 0.75rem; border:1px solid rgba(0,0,0,0);transition: all 0.3s}
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li:hover {background: #343A40;}
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li a {display: block; color:#dee2e6; padding:0.625rem 1.5rem; }
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li.aktiv { border:1px solid #fff;}
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li.aktiv:hover {background: rgba(0,0,0,0)}
+.ems-midpanel .ems-content-wrap .ems-content .ems-snb-wrap ul li.aktiv a {color:#fff;}
